@@ -1,4 +1,4 @@
 package com.sata.izonovel.Model;
 
-public class FavoritResponseModel {
+public class FavoriteResponseModel {
 }

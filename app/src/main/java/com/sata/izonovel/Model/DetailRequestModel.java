@@ -1,6 +1,7 @@
 package com.sata.izonovel.Model;
 
-public class DetailRequestModel {
+public class DetailRequestModel
+{
     public String getCollection() {
         return collection;
     }

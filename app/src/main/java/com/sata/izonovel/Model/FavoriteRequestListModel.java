@@ -1,6 +1,7 @@
 package com.sata.izonovel.Model;
 
-public class FavoritRequestListModel {
+public class FavoriteRequestListModel
+{
     public String getCollection() {
         return collection;
     }
