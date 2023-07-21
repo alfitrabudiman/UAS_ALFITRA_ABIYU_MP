@@ -2,6 +2,11 @@ package com.sata.izonovel.Model;
 
 public class FavoriteRequestListModel
 {
+    private String collection;
+    private String database;
+    private String dataSource;
+    private Filter filter;
+
     public String getCollection() {
         return collection;
     }
@@ -18,24 +23,34 @@ public class FavoriteRequestListModel
         this.database = database;
     }
 
-    public String getDatasource() {
-        return datasource;
+    public String getDataSource() {
+        return dataSource;
     }
 
-    public void setDatasource(String datasource) {
-        this.datasource = datasource;
+    public void setDataSource(String dataSource) {
+        this.dataSource = dataSource;
     }
 
-    public String getFilter() {
+    public Filter getFilter() {
         return filter;
     }
 
-    public void setFilter(String filter) {
+    public void setFilter(Filter filter) {
         this.filter = filter;
     }
 
-    private String collection;
-    private String database;
-    private String datasource;
-    private String filter;
+    public static class Filter{
+        public String getisFavorit() {
+            return isFavorit;
+        }
+
+        public void setisFavorit(String isFavorit) {
+            this.isFavorit = isFavorit;
+        }
+
+
+
+        private String isFavorit;
+
+    }
 }
